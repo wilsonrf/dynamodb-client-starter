@@ -54,6 +54,29 @@ publishing {
                     fromResolutionResult()
                 }
             }
+            pom {
+                name = "DynamoDB Client Starter"
+                description = "DynamoDB Client Spring Boot Starter"
+                url = "https://github.com/wilsonrf/dynamodb-client-starter"
+                licenses {
+                    license {
+                        name = "The Apache License, Version 2.0"
+                        url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                    }
+                }
+                developers {
+                    developer {
+                        id = "wilsonrf"
+                        name = "Wilson da Rocha França"
+                        email = "wilsonrf@gmail.com"
+                    }
+                }
+                scm {
+                    connection = "scm:git:git://github.com/dynamodb-client-starter.git"
+                    developerConnection = "scm:git:ssh://github.com/dynamodb-client-starter.git"
+                    url = "https://github.com/wilsonrf/dynamodb-client-starter"
+                }
+            }
         }
     }
 }
