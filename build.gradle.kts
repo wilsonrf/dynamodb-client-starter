@@ -19,6 +19,7 @@ plugins {
     id("io.spring.dependency-management")
     id("com.github.ben-manes.versions")
     id("maven-publish")
+    id("signing")
 }
 
 group = "com.wilsonfranca"
@@ -55,4 +56,18 @@ publishing {
             }
         }
     }
+}
+
+signing {
+    setRequired {
+        gradle.taskGraph.allTasks.any { it is PublishToMavenLocal }.not()
+    }
+
+    val signingKey: String? by project
+    val signingKeyId: String? by project
+    val signingPassword: String? by project
+
+    useInMemoryPgpKeys(signingKeyId, signingKey, signingPassword)
+
+    sign(publishing.publications["mavenJava"])
 }
