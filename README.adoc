@@ -1,0 +1,52 @@
+= DynamoDB client auto-configuration Spring Boot starter
+
+:github: https://github.com/wilsonrf/dynamodb-client-starter
+:autoconfigureGithubRepo: https://github.com/wilsonrf/dynamodb-client-autoconfigure
+== Key Features
+
+
+== Installation
+
+=== Maven
+[source,xml]
+----
+<dependency>
+    <groupId>com.wilsonfranca</groupId>
+    <artifactId>dynamodb-client-starter</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+</dependency>
+----
+=== Gradle Groovy
+[source,groovy]
+----
+implementation 'com.wilsonfranca:dynamodb-client-starter:1.0.0-SNAPSHOT'
+----
+=== Gradle Kotlin
+[source,kotlin]
+----
+implementation("com.wilsonfranca:dynamodb-client-starter:1.0.0-SNAPSHOT")
+----
+
+== Usage
+
+
+== Configuration
+
+== Reporting Issues
+You can report issues at {github}/issues[GitHub].
+
+== Building from Source
+
+[source,shell]
+----
+$ ./gradlew publishToMavenLocal
+----
+
+[source,shell]
+----
+$ ./gradlew build
+----
+
+== License
+
+DynamoDB client starter is Open Source software released under the https://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
