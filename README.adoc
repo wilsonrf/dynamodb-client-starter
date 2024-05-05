@@ -2,8 +2,9 @@
 
 :github: https://github.com/wilsonrf/dynamodb-client-starter
 :autoconfigureGithubRepo: https://github.com/wilsonrf/dynamodb-client-autoconfigure
-== Key Features
 
+This project provides a Spring Boot starter for DynamoDB client auto-configuration.
+If you are using Spring Boot and want to use DynamoDB client, you can use this starter to auto-configure the client.
 
 == Installation
 
@@ -26,11 +27,6 @@ implementation 'com.wilsonfranca:dynamodb-client-starter:1.0.0-SNAPSHOT'
 ----
 implementation("com.wilsonfranca:dynamodb-client-starter:1.0.0-SNAPSHOT")
 ----
-
-== Usage
-
-
-== Configuration
 
 == Reporting Issues
 You can report issues at {github}/issues[GitHub].
