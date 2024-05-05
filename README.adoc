@@ -1,4 +1,4 @@
-= DynamoDB client auto-configuration Spring Boot starter
+= DynamoDB client Spring Boot starter
 
 :github: https://github.com/wilsonrf/dynamodb-client-starter
 :autoconfigureGithubRepo: https://github.com/wilsonrf/dynamodb-client-autoconfigure
