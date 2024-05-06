@@ -14,18 +14,18 @@ If you are using Spring Boot and want to use DynamoDB client, you can use this s
 <dependency>
     <groupId>com.wilsonfranca</groupId>
     <artifactId>dynamodb-client-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 </dependency>
 ----
 === Gradle Groovy
 [source,groovy]
 ----
-implementation 'com.wilsonfranca:dynamodb-client-starter:1.0.0'
+implementation 'com.wilsonfranca:dynamodb-client-starter:1.0.1-SNAPSHOT'
 ----
 === Gradle Kotlin
 [source,kotlin]
 ----
-implementation("com.wilsonfranca:dynamodb-client-starter:1.0.0")
+implementation("com.wilsonfranca:dynamodb-client-starter:1.0.1-SNAPSHOT")
 ----
 
 == Reporting Issues
