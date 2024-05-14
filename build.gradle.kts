@@ -27,7 +27,17 @@ group = "com.wilsonfranca"
 repositories {
     mavenLocal()
     mavenCentral()
+    if (isRunningInCI()) {
+        maven {
+            url = uri("https://maven.pkg.github.com/wilsonrf/dynamodb-client-autoconfigure")
+            credentials {
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("GPR_USERNAME")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("GPR_TOKEN")
+            }
+        }
+    }
 }
+
 dependencyManagement {
     imports {
         mavenBom(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES)
@@ -123,3 +133,5 @@ signing {
 
     sign(publishing.publications["mavenJava"])
 }
+
+private fun isRunningInCI(): Boolean = System.getenv("CI") == "true"
